@@ -1,5 +1,17 @@
 /*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
 
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(animate.min.css);
+@import url(normalize.css);
+@import url(icomoon.css);
+@import url(font-awesome.min.css);
+@import url(meanmenu.css);
+@import url(owl.carousel.min.css);
+@import url(slick.css);
+@import url(jquery.fancybox.min.css);
+@import url(jquery-ui.css);
+@import url(nice-select.css);
 
 /*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
 
@@ -15,21 +27,6 @@
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
-
-
-/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
-
-@import url(animate.min.css);
-@import url(normalize.css);
-@import url(icomoon.css);
-@import url(css/font-awesome.min.css);
-@import url(meanmenu.css);
-@import url(owl.carousel.min.css);
-@import url(swiper.min.css);
-@import url(slick.css);
-@import url(jquery.fancybox.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -484,6 +481,7 @@ button {
     width: 100%;
     float: left;
     padding-top: 0px;
+    margin-bottom: 100px;
 }
 
 .services_taital {
@@ -499,7 +497,7 @@ button {
     font-size: 24px;
     color: #343534;
     font-weight: bold;
-    padding: 20px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     text-align: center;
 }
 
@@ -514,8 +512,12 @@ button {
     border-radius: 100%;
     border: 6px solid #f5c729;
     height: auto;
-    padding: 70px 0px;
+    padding: 50px 0px;
     box-shadow: 0px 0px 60px 0px #f0f0ef;
+}
+
+.box_main:hover .app_icon i {
+    color: #f8ca29;
 }
 
 .app_icon {
@@ -524,15 +526,12 @@ button {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
+    line-height: 0%;
 }
 
-.app_icon_1 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    display: none;
+.app_icon i {
+    font-size: 5rem;
 }
 
 .box_main:hover .services_text {
@@ -541,14 +540,6 @@ button {
 
 .services_text.active {
     color: #f5c729;
-}
-
-.box_main:hover .app_icon_1 {
-    display: block;
-}
-
-.box_main:hover .app_icon {
-    display: none;
 }
 
 .readmore_bt {
@@ -583,9 +574,9 @@ button {
 /* portfolio section start */
 
 .portfolio_section {
+    margin-top: 50px;
     width: 100%;
     float: left;
-    padding: 90px 0px;
 }
 
 .portfolio_taital {
@@ -605,7 +596,6 @@ button {
 .portfolio_section_2 {
     width: 100%;
     float: left;
-    padding-top: 30px;
 }
 
 .image {
@@ -712,7 +702,7 @@ button {
     background-image: url(../images/blog-bg.png);
     height: 550px;
     background-size: cover;
-    margin-bottom: 410px;
+    margin-bottom: 150px;
 }
 
 .blog_taital {
@@ -741,7 +731,7 @@ button {
 .blog_section_2 {
     width: 100%;
     float: left;
-    padding-top: 150px;
+    padding-top: 85px;
 }
 
 .blog_box {
@@ -751,11 +741,12 @@ button {
     padding: 0px 0px 20px 0px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+    margin-bottom: 25px;
 }
 
 .blog_img {
     width: 100%;
-    background-image: url(../images/blog-img1.png);
+    background-image: url(../images/blog-img-simba-ar.png);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -763,7 +754,7 @@ button {
 
 .blog_img_2 {
     width: 100%;
-    background-image: url(../images/blog-img2.png);
+    background-image: url(../images/blog-img-super-cleaner.png);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -771,7 +762,7 @@ button {
 
 .blog_img_3 {
     width: 100%;
-    background-image: url(../images/blog-img3.png);
+    background-image: url(../images/blog-img-studio-ghibli.png);
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -793,7 +784,11 @@ button {
     font-size: 20px;
     color: #fefefd;
     font-weight: bold;
-    padding: 250px 20px 20px 20px;
+    margin: 250px 20px 20px 0px;
+    padding-top: 15px;
+    padding-left: 25px;
+    text-align: justify;
+    background-color: #252f2d;
 }
 
 .lorem_text {
@@ -859,7 +854,7 @@ button {
 .contact_section_2 {
     width: 100%;
     float: left;
-    padding-top: 55px;
+    padding-top: 30px;
 }
 
 .padding_left_0 {
@@ -908,7 +903,7 @@ textarea#comment.massage-bt::placeholder {
     text-align: center;
 }
 
-.send_bt a {
+.send_bt button {
     width: 100%;
     text-align: center;
     font-size: 16px;
@@ -921,7 +916,7 @@ textarea#comment.massage-bt::placeholder {
     border-radius: 5px;
 }
 
-.send_bt a:hover {
+.send_bt button:hover {
     color: #fefefd;
     background-color: #252f2d;
 }
@@ -946,6 +941,7 @@ textarea#comment.massage-bt::placeholder {
 }
 
 .hire_text {
+    text-align: left;
     width: 100%;
     font-size: 30px;
     color: #252f2d;
@@ -1025,6 +1021,39 @@ textarea#comment.massage-bt::placeholder {
     background-color: #fefefd;
 }
 
+.contact_section_b {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.contact_section_b ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.contact_section_b li {
+    float: left;
+}
+
+.contact_section_b li a {
+    float: left;
+    font-size: 20px;
+    color: #fefefd;
+    margin: 0px 10px;
+    background-color: #3e412d;
+    padding: 12px 0px;
+    border-radius: 100%;
+    width: 60px;
+    text-align: center;
+}
+
+.contact_section_b li a:hover {
+    color: #252f2d;
+    background-color: #f5c729;
+}
 
 /* footer section end */
 
